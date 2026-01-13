@@ -2,8 +2,8 @@ import random
 
 class NumberGuessingGame:
 
-    def __init__(self):
-        pass  
+    def __init__(self, guess_count):
+        self.guess_count = guess_count  
        
     def generate_random_number(self):
         random.randint(1, 10)
@@ -23,3 +23,4 @@ print("Let's play a game!")
 print("I'm thinking of a number between 1 and 10.")
 print("Try to guess the number!")
 game.main_game_loop()
+
