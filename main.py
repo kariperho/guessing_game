@@ -1,4 +1,4 @@
-class NumberGuessingGame:
+import random
 
     def __init__(self, guess_count):
         self.guess_count = guess_count
