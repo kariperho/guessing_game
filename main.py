@@ -23,10 +23,10 @@ class NumberGuessingGame:
                 print(f"Correct answer!! It was {correct_answer}")
                 print(f"It took you {self.guess_count} tries.")
                 break
-            elseif correct_answer < player_answer:
+            elif correct_answer < player_answer:
                 print(f"Wrong! {player_answer} is too high. Try again.")
                 add_guess_count()
-            elseif correct_answer > player_answer:
+            elif correct_answer > player_answer:
                 print(f"Wrong! {player_answer} is too low. Try again.")
                 add_guess_count()
         
@@ -36,5 +36,6 @@ print("Try to guess the number!")
 game = NumberGuessingGame()
 
 game.main_game_loop()
+
 
 
