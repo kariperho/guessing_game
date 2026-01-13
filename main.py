@@ -29,7 +29,10 @@ class NumberGuessingGame:
                 print(f"Wrong! {player_answer} is too low. Try again.")
                 add_guess_count()
         
-
+print("Let's play a game!")
+print("I'm thinking of a number between 1 and 10.")
+print("Try to guess the number!")
 game = NumberGuessingGame()
 
 game.main_game_loop()
+
