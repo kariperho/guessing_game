@@ -3,7 +3,8 @@ import random
 class NumberGuessingGame:
 
     def __init__(self, guess_count):
-        self.guess_count = guess_count  
+        self.guess_count = guess_count
+        guess_count = 0
        
     def generate_random_number(self):
         return random.randint(1, 10)
@@ -13,7 +14,7 @@ class NumberGuessingGame:
         return number_guessed
               
     def add_guess_count(self):
-        pass  
+        self.guess_count += 1
            
     def main_game_loop(self):
         while True:
@@ -36,6 +37,7 @@ print("Try to guess the number!")
 game = NumberGuessingGame()
 
 game.main_game_loop()
+
 
 
 
