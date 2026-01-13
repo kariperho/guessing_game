@@ -18,6 +18,7 @@ class NumberGuessingGame:
             player_answer = ask_number()
             if correct_answer == player_answer:
                 print(f"Correct answer!! It was {correct_answer}")
+                print(f"It took you {self.guess_count} tries.")
                 break
             elseif correct_answer < player_answer:
                 print(f"Wrong! {player_answer} is too high. Try again.")
@@ -31,3 +32,4 @@ game = NumberGuessingGame()
 
 
 game.main_game_loop()
+
