@@ -1,13 +1,15 @@
 import random
 
+class NumberGuessingGame:
+
     def __init__(self, guess_count):
-        self.guess_count = guess_count
+        self.guess_count = guess_count  
        
     def generate_random_number(self):
-        pass 
+        random.randint(1, 10)
       
     def ask_number(self):
-        pass 
+        number_guessed = input("What number do you want to guess?")
               
     def add_guess_count(self):
         pass  
@@ -30,7 +32,4 @@ import random
 
 game = NumberGuessingGame()
 
-
 game.main_game_loop()
-
-
