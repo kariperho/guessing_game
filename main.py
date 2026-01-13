@@ -15,12 +15,21 @@ class NumberGuessingGame:
         pass  
            
     def main_game_loop(self):
-        pass
+        while True:
+            correct_answer = generate_random_number()
+            player_answer = ask_number()
+            if correct_answer == player_answer:
+                print(f"Correct answer!! It was {correct_answer}")
+                print(f"It took you {self.guess_count} tries.")
+                break
+            elseif correct_answer < player_answer:
+                print(f"Wrong! {player_answer} is too high. Try again.")
+                add_guess_count()
+            elseif correct_answer > player_answer:
+                print(f"Wrong! {player_answer} is too low. Try again.")
+                add_guess_count()
+        
 
 game = NumberGuessingGame()
 
-print("Let's play a game!")
-print("I'm thinking of a number between 1 and 10.")
-print("Try to guess the number!")
 game.main_game_loop()
-
