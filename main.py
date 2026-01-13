@@ -25,11 +25,12 @@ class NumberGuessingGame:
                 add_guess_count()
             elseif correct_answer > player_answer:
                 print(f"Wrong! {player_answer} is too low. Try again.")
-                add_guess_count
+                add_guess_count()
         
 
 game = NumberGuessingGame()
 
 
 game.main_game_loop()
+
 
