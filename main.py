@@ -1,10 +1,12 @@
+import random
+
 class NumberGuessingGame:
 
     def __init__(self):
         pass  
        
     def generate_random_number(self):
-        pass 
+        random.randint(1, 10)
       
     def ask_number(self):
         pass 
