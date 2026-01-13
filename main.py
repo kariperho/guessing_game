@@ -9,7 +9,7 @@ class NumberGuessingGame:
         random.randint(1, 10)
       
     def ask_number(self):
-        pass 
+        number_guessed = input("What number do you want to guess?")
               
     def add_guess_count(self):
         pass  
@@ -19,4 +19,7 @@ class NumberGuessingGame:
 
 game = NumberGuessingGame()
 
+print("Let's play a game!")
+print("I'm thinking of a number between 1 and 10.")
+print("Try to guess the number!")
 game.main_game_loop()
