@@ -1,7 +1,11 @@
-class NumberGuessingGame:
+import random
 
-    def __init__(self):
-        pass  
+class NumberGuessingGame:
+    def __init__(self, low: int = 1, high: int = 10):
+        self.low = low
+        self.high = high
+        self.secret = None
+        self.guess_count = 0
        
     def generate_random_number(self):
         pass 
